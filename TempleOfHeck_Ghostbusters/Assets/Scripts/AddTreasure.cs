@@ -7,7 +7,6 @@ public class AddTreasure : MonoBehaviour
     Treasure[] treasures;
     int numberOfTreasuresCollected = 0;
     int totalNumberOfTreasures;
-    bool playOnce = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +34,13 @@ public class AddTreasure : MonoBehaviour
         if(numberOfTreasuresCollected >= totalNumberOfTreasures)
         {
             Debug.Log("you win!");
+            GoToNextLevel();
         }
+    }
+
+    void GoToNextLevel()
+    {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.StartCoroutine("LoadNextScene");
     }
 }
