@@ -44,6 +44,7 @@ public class GridMovement2D : MonoBehaviour
         if (isBoosted)
         {
             BoosterMovement();
+            return;
         }
         PlayerMovement();
     }
