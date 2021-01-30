@@ -16,7 +16,7 @@ public class DroppingSpikeBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("killtime = " + killTime);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
