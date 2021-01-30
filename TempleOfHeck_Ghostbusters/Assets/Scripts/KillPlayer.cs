@@ -22,7 +22,7 @@ public class KillPlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (collider.gameObject.GetComponent<Death>())
         {
             player.gameObject.GetComponent<Death>().Activate();
             /*
