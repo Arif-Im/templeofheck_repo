@@ -32,7 +32,7 @@ public class Death : MonoBehaviour
         if(!isDead)
         {
             isDead = true;
-            //CinemachineShake.Instance.ShakeCamera(5, 0.2f);
+            CinemachineShake.Instance.ShakeCamera(8, 0.5f);
             StartCoroutine("Die");
         }
     }
