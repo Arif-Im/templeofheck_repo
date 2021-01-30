@@ -14,7 +14,9 @@ public class GridMovement2D : MonoBehaviour
     [SerializeField] float drawCircleRadius = 0.8f;
     [SerializeField] Animator playerAnim = null;
     [SerializeField] SpriteRenderer sprite = null;
+    [SerializeField] GameObject[] footPrints = new GameObject[2];
     private int runningID;
+    private int footAlternate = 0;
     float originalMovementSpeed;
 
     bool isBoosted = false;
@@ -63,6 +65,11 @@ public class GridMovement2D : MonoBehaviour
                 }
                 sprite.flipX = Input.GetAxisRaw("Horizontal") > 0 ? true: false;
                 playerAnim.SetBool(runningID, true);
+
+                GameObject footPrint = GameObject.Instantiate(footPrints[footAlternate], transform);
+                footAlternate = footAlternate < 1 ? 1 : 0;
+                footPrint.transform.SetParent(null);
+                footPrint.SetActive(true);
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1)
             {
@@ -74,6 +81,11 @@ public class GridMovement2D : MonoBehaviour
                         movePoint.position += new Vector3(0, Input.GetAxisRaw("Vertical"), 0);
                     }
                 }
+
+                GameObject footPrint = GameObject.Instantiate(footPrints[footAlternate], transform);
+                footAlternate = footAlternate < 1 ? 1 : 0;
+                footPrint.transform.SetParent(null);
+                footPrint.SetActive(true);
             }
             else
             {
