@@ -14,34 +14,11 @@ public class AddTreasure : MonoBehaviour
     {
         treasures = FindObjectsOfType<Treasure>();
         totalNumberOfTreasures = treasures.Length;
-        Debug.Log(treasures.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
-        CollectTreasure();
-    }
-
-    void CollectTreasure()
-    {
-        //foreach (Treasure treasure in treasures)
-        //{
-        //    if(Vector3.Distance(transform.position, treasure.transform.position) <= .05f)
-        //    {
-        //        treasure.gameObject.SetActive(false);
-        //        numberOfTreasuresCollected += 1;
-        //        Debug.Log(treasures.Length);
-        //    }
-        //    if (numberOfTreasuresCollected >= treasures.Length)
-        //    {
-        //        if (playOnce == false)
-        //        {
-        //            Debug.Log("you win!");
-        //            playOnce = true;
-        //        }
-        //    }
-        //}
 
     }
 

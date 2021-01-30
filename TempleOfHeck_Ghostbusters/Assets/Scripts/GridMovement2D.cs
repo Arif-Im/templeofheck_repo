@@ -77,7 +77,7 @@ public class GridMovement2D : MonoBehaviour
         RaycastHit2D hitBlock = Physics2D.Raycast(transform.position, direction, raycastDistance, whatIsPushableBlock);
         RaycastHit2D hitWall = Physics2D.Raycast(transform.position, direction, raycastDistance, whatIsStopMovement);
 
-        Debug.Log("Input of x = " + Input.GetAxisRaw("Horizontal") + ". Input of y = " + Input.GetAxisRaw("Vertical") + ". Direction = " + direction);
+        //Debug.Log("Input of x = " + Input.GetAxisRaw("Horizontal") + ". Input of y = " + Input.GetAxisRaw("Vertical") + ". Direction = " + direction);
 
         if (pushBlock)
         {
