@@ -44,11 +44,14 @@ TagManager:
   - name: Floor
     uniqueID: 3935832019
     locked: 0
+  - name: Footprint
+    uniqueID: 1291603887
+    locked: 0
   - name: Hole
     uniqueID: 2531008831
     locked: 0
-  - name: Player
-    uniqueID: 1140740233
+  - name: Blood
+    uniqueID: 2688395561
     locked: 0
   - name: Trap
     uniqueID: 2020726463
@@ -59,6 +62,6 @@ TagManager:
   - name: Treasure
     uniqueID: 3573851433
     locked: 0
-  - name: Blood
-    uniqueID: 2688395561
+  - name: Player
+    uniqueID: 1140740233
     locked: 0

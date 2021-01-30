@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] float loadTime = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    public UnityEvent firstScene;
+
+    private void OnEnable()
     {
-        
+        // Freeze Game and show menu if it is the first scene of the game
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            if (firstScene != null)
+                firstScene.Invoke();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     public void ReloadScene()
     {
