@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
+    float raycastDistance = 1.5f;
+    LayerMask pushableBlock;
     GridMovement2D player;
 
     // Start is called before the first frame update
@@ -15,7 +17,12 @@ public class KillPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(player.transform.position, transform.position) <= 0.05)
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("Player"))
         {
             player.gameObject.GetComponent<Death>().Activate();
             /*
@@ -24,15 +31,6 @@ public class KillPlayer : MonoBehaviour
             */
         }
     }
-
-    //private void OnTriggerEnter2D(Collider2D collider)
-    //{
-    //    if (collider.gameObject.CompareTag("Player"))
-    //    {
-    //        StartCoroutine("Respawn");
-    //        Destroy(collider.gameObject);
-    //    }
-    //}
 
     IEnumerator Respawn()
     {
