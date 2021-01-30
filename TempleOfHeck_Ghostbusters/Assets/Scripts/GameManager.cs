@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         {
             if (firstScene != null)
                 firstScene.Invoke();
+
         }
     }
 
