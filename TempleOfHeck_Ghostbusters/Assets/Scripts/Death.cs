@@ -9,6 +9,7 @@ public class Death : MonoBehaviour
     [SerializeField] private AudioSource bloodSplatter = null;
     [SerializeField] private AudioSource bloodSpill = null;
     [SerializeField] private Animator playerAnim = null;
+    private int deadID;
     private GridMovement2D playerMovement = null;
 
     #endregion
@@ -23,6 +24,7 @@ public class Death : MonoBehaviour
         {
             Debug.Log("GridMovement2D component not attached onto " + gameObject.name + " for Death component to reference.");
         }
+        deadID = Animator.StringToHash("Dead");
     }
 
     public void Activate()
@@ -30,6 +32,7 @@ public class Death : MonoBehaviour
         if(!isDead)
         {
             isDead = true;
+            //CinemachineShake.Instance.ShakeCamera(5, 0.2f);
             StartCoroutine("Die");
         }
     }
@@ -37,6 +40,7 @@ public class Death : MonoBehaviour
     IEnumerator Die()
     {
         playerMovement.enabled = false;
+        playerAnim.SetBool(deadID, true);
         blood.Play();
         bloodSplatter.Play();
         bloodSpill.PlayScheduled(0.2f);

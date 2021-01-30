@@ -12,6 +12,9 @@ public class GridMovement2D : MonoBehaviour
     [SerializeField] Transform movePoint;
     [SerializeField] LayerMask whatIsStopMovement;
     [SerializeField] float drawCircleRadius = 0.8f;
+    [SerializeField] Animator playerAnim = null;
+    [SerializeField] SpriteRenderer sprite = null;
+    private int runningID;
     float originalMovementSpeed;
 
     bool isBoosted = false;
@@ -28,6 +31,7 @@ public class GridMovement2D : MonoBehaviour
     {
         originalMovementSpeed = movementSpeed;
         movePoint.parent = null;
+        runningID = Animator.StringToHash("Running");
     }
 
     // Update is called once per frame
@@ -57,9 +61,12 @@ public class GridMovement2D : MonoBehaviour
                         movePoint.position += new Vector3(Mathf.RoundToInt(Input.GetAxisRaw("Horizontal")), 0, 0);
                     }
                 }
+                sprite.flipX = Input.GetAxisRaw("Horizontal") > 0 ? true: false;
+                playerAnim.SetBool(runningID, true);
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1)
             {
+                playerAnim.SetBool(runningID, true);
                 if (!blockTouchWall)
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Mathf.RoundToInt(Input.GetAxisRaw("Vertical")), 0f) / 2, drawCircleRadius, whatIsStopMovement))
@@ -67,6 +74,10 @@ public class GridMovement2D : MonoBehaviour
                         movePoint.position += new Vector3(0, Input.GetAxisRaw("Vertical"), 0);
                     }
                 }
+            }
+            else
+            {
+                playerAnim.SetBool(runningID, false);
             }
         }
     }
