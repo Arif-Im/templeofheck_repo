@@ -17,8 +17,11 @@ public class KillPlayer : MonoBehaviour
     {
         if(Vector3.Distance(player.transform.position, transform.position) <= 0.05)
         {
+            player.gameObject.GetComponent<Death>().Activate();
+            /*
             player.gameObject.SetActive(false);
             StartCoroutine("Respawn");
+            */
         }
     }
 
