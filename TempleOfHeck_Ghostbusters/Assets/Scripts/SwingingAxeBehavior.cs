@@ -29,7 +29,7 @@ public class SwingingAxeBehavior : MonoBehaviour
 
     private void SwingingAxeMechanic()
     {
-        //Debug.Log("kill time = " + killTime + " kill player = " + killPlayer);
+        Debug.Log("kill time = " + killTime + " kill player = " + killPlayer);
 
         if (killTime > 0)
         {
