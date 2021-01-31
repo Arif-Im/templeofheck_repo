@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent firstScene;
     public UnityEvent levelComplete;
     public UnityEvent timesUp;
+    public UnityEvent finalScene;
     private bool levelWin = false;
 
     private void OnEnable()
@@ -33,10 +34,25 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void ReloadGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(loadTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if((SceneManager.GetActiveScene().buildIndex + 1) > 2)
+        {
+            if(finalScene != null)
+            {
+                finalScene.Invoke();
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void LevelWon()
