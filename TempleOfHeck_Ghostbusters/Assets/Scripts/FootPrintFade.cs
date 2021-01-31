@@ -25,7 +25,6 @@ public class FootPrintFade : MonoBehaviour
             timer += Time.deltaTime;
             normalizedTime = timer / fadeTime;
             sprite.color = Color.Lerp(originalColor, targetColor, normalizedTime);
-            Debug.Log(sprite.color.a);
         }
         else
         {
