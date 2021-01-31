@@ -44,6 +44,9 @@ TagManager:
   - name: Floor
     uniqueID: 3935832019
     locked: 0
+  - name: Wall
+    uniqueID: 2118794817
+    locked: 0
   - name: Footprint
     uniqueID: 1291603887
     locked: 0
@@ -53,11 +56,11 @@ TagManager:
   - name: Blood
     uniqueID: 2688395561
     locked: 0
-  - name: Trap
-    uniqueID: 2020726463
-    locked: 0
   - name: Pushable Block
     uniqueID: 3162573029
+    locked: 0
+  - name: Trap
+    uniqueID: 2020726463
     locked: 0
   - name: Treasure
     uniqueID: 3573851433
