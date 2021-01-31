@@ -41,6 +41,6 @@ public class AddTreasure : MonoBehaviour
     void GoToNextLevel()
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
-        gameManager.StartCoroutine("LoadNextScene");
+        gameManager.LevelWon();
     }
 }

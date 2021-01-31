@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent firstScene;
     public UnityEvent levelComplete;
+    public UnityEvent timesUp;
     private bool levelWin = false;
 
     private void OnEnable()
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
         levelWin = true;
         if (levelComplete != null)
             levelComplete.Invoke();
+        StartCoroutine("LoadNextScene");
     }
 
     public void StartTimer()
@@ -55,8 +57,15 @@ public class GameManager : MonoBehaviour
         while(deathTime > 0 && !levelWin)
         {
             deathTime -= Time.deltaTime;
-            if (timer != null)
+            if (deathTime <= 0)
+            {
+                if (timesUp != null)
+                    timesUp.Invoke();
+            }
+            else if (timer != null)
+            {
                 timer.text = deathTime.ToString();
+            }
             yield return null;
         }
     }
