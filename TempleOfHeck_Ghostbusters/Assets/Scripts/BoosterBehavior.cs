@@ -22,7 +22,7 @@ public class BoosterBehavior : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(!isBoostMoving && Vector3.Distance(collision.transform.position, transform.position) <= .05)
+        if(!isBoostMoving && Vector3.Distance(collision.transform.position, transform.position) <= .1)
         {
             Debug.Log("start moving");
             isBoostMoving = true;
