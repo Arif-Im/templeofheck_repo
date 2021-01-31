@@ -57,6 +57,11 @@ public class GridMovement2D : MonoBehaviour
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05)
         {
+            if(levelComplete)
+            {
+                playerAnim.SetBool(runningID, false);
+                this.enabled = false;
+            }
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1)
             {
                 if (!blockTouchWall)
@@ -93,12 +98,6 @@ public class GridMovement2D : MonoBehaviour
             else
             {
                 playerAnim.SetBool(runningID, false);
-            }
-
-            if (levelComplete)
-            {
-                playerAnim.SetBool(runningID, false);
-                this.enabled = false;
             }
         }
     }
