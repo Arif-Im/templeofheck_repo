@@ -7450,7 +7450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTime: 10
   timer: {fileID: 233055172}
-  loadTime: 2.5
+  loadTime: 2.6
   firstScene:
     m_PersistentCalls:
       m_Calls:
