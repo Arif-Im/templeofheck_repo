@@ -7043,6 +7043,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4552126020086411850, guid: cc821e7e9cc707645b6cbb6591c0ce68,
+        type: 3}
+      propertyPath: startingKillTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4686402381012922317, guid: cc821e7e9cc707645b6cbb6591c0ce68,
         type: 3}
       propertyPath: m_LocalPosition.x

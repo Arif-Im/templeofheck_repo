@@ -28,6 +28,8 @@ public class GridMovement2D : MonoBehaviour
     bool pushBlock = false;
     bool blockTouchWall = false;
 
+    bool levelComplete = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,11 @@ public class GridMovement2D : MonoBehaviour
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05)
         {
+            if(levelComplete)
+            {
+                playerAnim.SetBool(runningID, false);
+                this.enabled = false;
+            }
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1)
             {
                 if (!blockTouchWall)
@@ -196,7 +203,6 @@ public class GridMovement2D : MonoBehaviour
 
     public void PauseControls()
     {
-        playerAnim.SetBool(runningID, false);
-        this.enabled = false;
+        levelComplete = true;
     }
 }
