@@ -65,3 +65,6 @@ TagManager:
   - name: Player
     uniqueID: 1140740233
     locked: 0
+  - name: CoverWall
+    uniqueID: 1779871581
+    locked: 0

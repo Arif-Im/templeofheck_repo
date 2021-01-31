@@ -127,7 +127,7 @@ public class GridMovement2D : MonoBehaviour
 
     private void BoosterMovement()
     {
-        if(Vector3.Distance(movePoint.position, boostTarget) >= 0.05f)
+        if(Vector3.Distance(movePoint.position, boostTarget) >= 0.1f)
         {
             movePoint.position = new Vector3(Mathf.RoundToInt(boostTarget.x), Mathf.RoundToInt(boostTarget.y), 0f);
 
@@ -153,6 +153,7 @@ public class GridMovement2D : MonoBehaviour
         {
             isOnBooster = true;
         }
+
         if(!isOnBooster && collision.gameObject.layer == 8)
         {
             Debug.Log("wall is hit");
