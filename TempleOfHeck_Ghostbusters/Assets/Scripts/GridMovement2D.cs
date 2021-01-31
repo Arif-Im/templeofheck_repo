@@ -193,4 +193,10 @@ public class GridMovement2D : MonoBehaviour
         //Gizmos.DrawSphere(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) / 2 + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) / 2, drawCircleRadius);
         Gizmos.DrawLine(transform.position, transform.position + direction * raycastDistance);
     }
+
+    public void PauseControls()
+    {
+        playerAnim.SetBool(runningID, false);
+        this.enabled = false;
+    }
 }
