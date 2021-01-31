@@ -157,7 +157,7 @@ public class GridMovement2D : MonoBehaviour
         if(!isOnBooster && collision.gameObject.layer == 8)
         {
             Debug.Log("wall is hit");
-            movePoint.position = new Vector3(Mathf.RoundToInt(movePoint.position.x), Mathf.RoundToInt(movePoint.position.y), 0);
+            movePoint.position = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y), 0);
             isBoosted = false;
         }
 
