@@ -32,6 +32,54 @@ TextureImporter:
   - first:
       213: -4643390065056705212
     second: GGJ koboi_9
+  - first:
+      213: 29360772153554957
+    second: GGJ koboi_0
+  - first:
+      213: -1790441136871231689
+    second: GGJ koboi_1
+  - first:
+      213: 4395497645964335826
+    second: GGJ koboi_2
+  - first:
+      213: -4134369850770820967
+    second: GGJ koboi_3
+  - first:
+      213: -9048802227084485689
+    second: GGJ koboi_4
+  - first:
+      213: 531731772459627949
+    second: GGJ koboi_5
+  - first:
+      213: -388487175922196204
+    second: GGJ koboi_6
+  - first:
+      213: 7235169125540480050
+    second: GGJ koboi_7
+  - first:
+      213: 2379744990585876013
+    second: GGJ koboi_8
+  - first:
+      213: 9063096846128135042
+    second: GGJ koboi_9
+  - first:
+      213: 2181381736478835162
+    second: GGJ koboi_10
+  - first:
+      213: -5154121608048137714
+    second: GGJ koboi_11
+  - first:
+      213: 3306007556933867236
+    second: GGJ koboi_12
+  - first:
+      213: 3883315441634040688
+    second: GGJ koboi_13
+  - first:
+      213: 5565700998280965186
+    second: GGJ koboi_14
+  - first:
+      213: 201696655336085136
+    second: GGJ koboi_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -179,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7509c1a9e3f0ca5f0800000000000000
-      internalID: -744203076875022249
+      spriteID: d083b8a777f486000800000000000000
+      internalID: 29360772153554957
       vertices: []
       indices: 
       edges: []
@@ -200,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd9c79be72e57bf0800000000000000
-      internalID: -327106364008784385
+      spriteID: 73f2b8da5431727e0800000000000000
+      internalID: -1790441136871231689
       vertices: []
       indices: 
       edges: []
@@ -221,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 868d9ec099a068670800000000000000
-      internalID: 8540525395817650280
+      spriteID: 2da15c612d1fffc30800000000000000
+      internalID: 4395497645964335826
       vertices: []
       indices: 
       edges: []
@@ -242,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5080bb80eabd703c0800000000000000
-      internalID: -4393301370959362043
+      spriteID: 99078ba8684cf96c0800000000000000
+      internalID: -4134369850770820967
       vertices: []
       indices: 
       edges: []
@@ -263,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7b6812a5e65f77a0800000000000000
-      internalID: -6377283003066324101
+      spriteID: 7cb9ddb21523c6280800000000000000
+      internalID: -9048802227084485689
       vertices: []
       indices: 
       edges: []
@@ -284,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc9ced141dc42710800000000000000
-      internalID: 1667683248319012036
+      spriteID: da5be35da37116700800000000000000
+      internalID: 531731772459627949
       vertices: []
       indices: 
       edges: []
@@ -305,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08353117955d8b90800000000000000
-      internalID: -7238034918797395953
+      spriteID: 411ec57c8f0db9af0800000000000000
+      internalID: -388487175922196204
       vertices: []
       indices: 
       edges: []
@@ -326,8 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ec71e9ed0719fb0800000000000000
-      internalID: -4642805639404859888
+      spriteID: 234c6b17cfb786460800000000000000
+      internalID: 7235169125540480050
       vertices: []
       indices: 
       edges: []
@@ -347,8 +395,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48288ba0e5fd2c180800000000000000
-      internalID: -9096462702335196540
+      spriteID: d2ee2e3e57d860120800000000000000
+      internalID: 2379744990585876013
       vertices: []
       indices: 
       edges: []
@@ -368,8 +416,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44597ba665d5f8fb0800000000000000
-      internalID: -4643390065056705212
+      spriteID: 28b3e6e209696cd70800000000000000
+      internalID: 9063096846128135042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad18852c123d54e10800000000000000
+      internalID: 2181381736478835162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a202784b1e878b0800000000000000
+      internalID: -5154121608048137714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6dcc76b5c41ed20800000000000000
+      internalID: 3306007556933867236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bd269c1de44e530800000000000000
+      internalID: 3883315441634040688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ce290d1975d3d40800000000000000
+      internalID: 5565700998280965186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GGJ koboi_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09611b51a029cc200800000000000000
+      internalID: 201696655336085136
       vertices: []
       indices: 
       edges: []

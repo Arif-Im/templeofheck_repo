@@ -16,6 +16,7 @@ public class GridMovement2D : MonoBehaviour
     [SerializeField] SpriteRenderer sprite = null;
     [SerializeField] GameObject[] footPrints = new GameObject[2];
     private int runningID;
+    private int celebrateID;
     private int footAlternate = 0;
     float originalMovementSpeed;
 
@@ -36,6 +37,7 @@ public class GridMovement2D : MonoBehaviour
         originalMovementSpeed = movementSpeed;
         movePoint.parent = null;
         runningID = Animator.StringToHash("Running");
+        celebrateID = Animator.StringToHash("Celebrate");
     }
 
     // Update is called once per frame
@@ -98,6 +100,7 @@ public class GridMovement2D : MonoBehaviour
             if (levelComplete)
             {
                 playerAnim.SetBool(runningID, false);
+                playerAnim.SetTrigger(celebrateID);
                 this.enabled = false;
             }
         }

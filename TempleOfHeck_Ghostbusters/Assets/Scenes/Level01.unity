@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTime: 10
   timer: {fileID: 233055172}
-  loadTime: 1
+  loadTime: 2.5
   firstScene:
     m_PersistentCalls:
       m_Calls:
@@ -4492,12 +4492,12 @@ PrefabInstance:
     - target: {fileID: 6647280411873600490, guid: d6ea989682b1e6b4ead2f193140ff0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.214211
+      value: -6.79
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: d6ea989682b1e6b4ead2f193140ff0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.681442
+      value: -4.32
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: d6ea989682b1e6b4ead2f193140ff0c8,
         type: 3}
@@ -5418,12 +5418,12 @@ PrefabInstance:
     - target: {fileID: 6647280411873600490, guid: c610844133c2b734699e464703d35f3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2142115
+      value: -6.79
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: c610844133c2b734699e464703d35f3a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.318558
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: c610844133c2b734699e464703d35f3a,
         type: 3}
@@ -6165,12 +6165,12 @@ PrefabInstance:
     - target: {fileID: 6647280411873600490, guid: b58e9eb865b069b468f463ed89c80c8c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.79
+      value: -6.79
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: b58e9eb865b069b468f463ed89c80c8c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.681442
+      value: -3.32
       objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: b58e9eb865b069b468f463ed89c80c8c,
         type: 3}
