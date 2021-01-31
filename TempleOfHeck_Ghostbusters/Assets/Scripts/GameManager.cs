@@ -25,6 +25,10 @@ public class GameManager : MonoBehaviour
             if (firstScene != null)
                 firstScene.Invoke();
         }
+        else
+        {
+            StartTimer();
+        }
         if (timer != null)
             timer.text = deathTime.ToString();
     }
