@@ -22,7 +22,9 @@ public class ActivateKillPlayer : MonoBehaviour
     {
         player = GetComponentInParent<DroppingSpikeBehavior>().player;
         shadow.SetActive(false);
-        if(player == null) { return; }
+        if (CinemachineShake.Instance != null)
+            CinemachineShake.Instance.ShakeCamera(5.0f, 0.4f);
+        if (player == null) { return; }
         player.Activate();
     }
 }
