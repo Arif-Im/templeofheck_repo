@@ -6,6 +6,7 @@ public class Treasure : MonoBehaviour
     private Animator anim = null;
     private int pickUpID;
     private AudioSource audio = null;
+    private ParticleSystem particles = null;
     private bool pickedUp = false;
 
     private void Awake()
@@ -13,6 +14,7 @@ public class Treasure : MonoBehaviour
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+        particles = GetComponentInChildren<ParticleSystem>();
         pickUpID = Animator.StringToHash("PickUp");
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,6 +27,7 @@ public class Treasure : MonoBehaviour
             coll.enabled = false;
             anim.SetBool(pickUpID, true);
             audio.Play();
+            particles.Stop();
             Destroy(gameObject, 2.0f);
         }
     }
