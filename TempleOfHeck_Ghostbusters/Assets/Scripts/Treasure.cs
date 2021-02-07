@@ -12,6 +12,7 @@ public class Treasure : MonoBehaviour
     {
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
+        audio = GetComponent<AudioSource>();
         pickUpID = Animator.StringToHash("PickUp");
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +24,8 @@ public class Treasure : MonoBehaviour
             pickedUp = true;
             coll.enabled = false;
             anim.SetBool(pickUpID, true);
-            Destroy(gameObject, 1.0f);
+            audio.Play();
+            Destroy(gameObject, 2.0f);
         }
     }
 }
