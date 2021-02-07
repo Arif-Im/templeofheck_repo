@@ -27,7 +27,6 @@ public class AddTreasure : MonoBehaviour
 
         if (treasure != null)
         {
-            Destroy(treasure.gameObject);
             numberOfTreasuresCollected += 1;
         }
 
