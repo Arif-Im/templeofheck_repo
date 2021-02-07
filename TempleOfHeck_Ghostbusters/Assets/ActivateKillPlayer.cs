@@ -21,6 +21,7 @@ public class ActivateKillPlayer : MonoBehaviour
     public void KillMoment()
     {
         player = GetComponentInParent<DroppingSpikeBehavior>().player;
+        transform.parent.gameObject.layer = 8;
         shadow.SetActive(false);
         if (CinemachineShake.Instance != null)
             CinemachineShake.Instance.ShakeCamera(5.0f, 0.4f);

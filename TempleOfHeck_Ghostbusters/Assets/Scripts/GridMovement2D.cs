@@ -26,10 +26,11 @@ public class GridMovement2D : MonoBehaviour
     bool isOnBooster = false;
     Vector3 direction;
 
-    bool pushBlock = false;
+    bool isPushingBlock = false;
     bool blockTouchWall = false;
-
     bool levelComplete = false;
+
+    GameObject pushableBlock;
 
     // Start is called before the first frame update
     void Start()
@@ -114,7 +115,7 @@ public class GridMovement2D : MonoBehaviour
 
         //Debug.Log("Input of x = " + Input.GetAxisRaw("Horizontal") + ". Input of y = " + Input.GetAxisRaw("Vertical") + ". Direction = " + direction);
 
-        if (pushBlock)
+        if (isPushingBlock)
         {
             if (hitBlock)
             {
@@ -124,10 +125,12 @@ public class GridMovement2D : MonoBehaviour
             if (hitBlock && hitWall)
             {
                 blockTouchWall = true;
+                pushableBlock.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             }
             else
             {
                 blockTouchWall = false;
+                pushableBlock.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }
         else
@@ -174,7 +177,8 @@ public class GridMovement2D : MonoBehaviour
 
         if (collision.gameObject.layer == 10)
         {
-            pushBlock = true;
+            isPushingBlock = true;
+            pushableBlock = collision.gameObject;
         }
     }
 
@@ -187,7 +191,7 @@ public class GridMovement2D : MonoBehaviour
 
         if (collision.gameObject.layer == 10)
         {
-            pushBlock = false;
+            isPushingBlock = false;
         }
     }
 
