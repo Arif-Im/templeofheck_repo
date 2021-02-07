@@ -14,18 +14,11 @@ public class AddTreasure : MonoBehaviour
         treasures = FindObjectsOfType<Treasure>();
         totalNumberOfTreasures = treasures.Length;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Treasure treasure = collision.GetComponent<Treasure>();
 
-        if (treasure != null)
+        if (treasure != null && !treasure.pickedUp)
         {
             numberOfTreasuresCollected += 1;
         }
@@ -36,7 +29,6 @@ public class AddTreasure : MonoBehaviour
             GoToNextLevel();
         }
     }
-
     void GoToNextLevel()
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
