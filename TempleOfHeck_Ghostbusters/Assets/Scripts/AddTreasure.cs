@@ -24,8 +24,6 @@ public class AddTreasure : MonoBehaviour
             numberOfTreasuresCollected += 1;
         }
 
-        Debug.Log(numberOfTreasuresCollected + " " + totalNumberOfTreasures);
-
         if(numberOfTreasuresCollected >= totalNumberOfTreasures)
         {
             Debug.Log("you win!");
