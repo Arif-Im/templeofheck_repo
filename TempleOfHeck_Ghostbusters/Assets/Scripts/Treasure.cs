@@ -8,6 +8,7 @@ public class Treasure : MonoBehaviour
     private AudioSource audio = null;
     private ParticleSystem particles = null;
     public bool pickedUp { get; private set; }
+    public bool treasureAdded { get; set; }
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class Treasure : MonoBehaviour
         particles = GetComponentInChildren<ParticleSystem>();
         pickUpID = Animator.StringToHash("PickUp");
         pickedUp = false;
+        treasureAdded = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,7 +26,7 @@ public class Treasure : MonoBehaviour
         if(!pickedUp && collision.GetComponent<GridMovement2D>())
         {
             // PickUp event behaviours
-            pickedUp = true;
+            pickedUp = false;
             coll.enabled = false;
             anim.SetBool(pickUpID, true);
             audio.Play();

@@ -18,10 +18,13 @@ public class AddTreasure : MonoBehaviour
     {
         Treasure treasure = collision.GetComponent<Treasure>();
 
-        if (treasure != null && !treasure.pickedUp)
+        if (treasure != null && !treasure.treasureAdded)
         {
+            treasure.treasureAdded = true;
             numberOfTreasuresCollected += 1;
         }
+
+        Debug.Log(numberOfTreasuresCollected + " " + totalNumberOfTreasures);
 
         if(numberOfTreasuresCollected >= totalNumberOfTreasures)
         {

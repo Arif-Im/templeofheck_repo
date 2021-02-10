@@ -28,7 +28,7 @@ public class FootPrintFade : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }

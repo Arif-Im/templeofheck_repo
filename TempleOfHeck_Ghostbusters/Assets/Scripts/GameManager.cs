@@ -60,10 +60,13 @@ public class GameManager : MonoBehaviour
     }
     public void LevelWon()
     {
-        levelWin = true;
-        if (levelComplete != null)
-            levelComplete.Invoke();
-        StartCoroutine("LoadNextScene");
+        if(!levelWin)
+        {
+            levelWin = true;
+            if (levelComplete != null)
+                levelComplete.Invoke();
+            StartCoroutine("LoadNextScene");
+        }
     }
 
     public void StartTimer()

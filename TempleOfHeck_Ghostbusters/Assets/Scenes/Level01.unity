@@ -8665,6 +8665,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1271046581}
     m_Modifications:
+    - target: {fileID: -4144343871715173207, guid: d6ea989682b1e6b4ead2f193140ff0c8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6647280411873600490, guid: d6ea989682b1e6b4ead2f193140ff0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9341,35 +9346,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8127421161818743984, guid: 30286e1f3fe80b243acfc5441aa38198,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Programming
-
-
-        Arif     https://arifimraniskandar.wixsite.com/gameprogrammer
-
-
-        https://arifimraniskandar.wixsite.com/website
-
-
-        Wang
-        Hai Feng   hfeng1998@gmail.com
-
-
-        Art
-
-
-        Han
-
-
-        Guluere
-        (Chan Kwok Chun : chunc59@yahoo.com)
-
-
-        Thank you for playing our
-        game!'
       objectReference: {fileID: 0}
     - target: {fileID: 8127421161818743984, guid: 30286e1f3fe80b243acfc5441aa38198,
         type: 3}
