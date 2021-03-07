@@ -49,6 +49,7 @@ public class KillPlayer : MonoBehaviour
                     anim.SetBool(safeID, false);
             }
         }
+        //Debug.Log(killState);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -61,6 +62,19 @@ public class KillPlayer : MonoBehaviour
             player.gameObject.SetActive(false);
             StartCoroutine("Respawn");
             */
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.gameObject.GetComponent<Death>())
+        {
+            Debug.Log("OnTriggerStay2D entered. " + killState);
+            if (killState)
+            {
+                Debug.Log("Triggering Death");
+                player.gameObject.GetComponent<Death>().Activate();
+            }
         }
     }
 
