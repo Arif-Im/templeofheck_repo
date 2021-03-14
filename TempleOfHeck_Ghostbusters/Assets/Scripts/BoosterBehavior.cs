@@ -24,7 +24,7 @@ public class BoosterBehavior : MonoBehaviour
     {
         if(!isBoostMoving && Vector3.Distance(collision.transform.position, transform.position) <= .1)
         {
-            Debug.Log("start moving");
+            //Debug.Log("start moving");
             isBoostMoving = true;
             if (collision.gameObject.GetComponentInParent<GridMovement2D>() == null) { return; }
             collision.gameObject.GetComponentInParent<GridMovement2D>().SetBoosted(transform.position + transform.up * numberOfTilesToStep);

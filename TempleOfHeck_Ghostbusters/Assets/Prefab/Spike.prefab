@@ -42,12 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5689002202989957933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4055c851b594664f88bfd260a91f9bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 1590a2616c1f60d4c9e5aa2f66272c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   safeDuration: 1
   killDuration: 2
   anim: {fileID: 8513938536920462271}
+  startUpDelay: 0
 --- !u!61 &2468256150433054709
 BoxCollider2D:
   m_ObjectHideFlags: 0
