@@ -79,15 +79,16 @@ public class GameManager : MonoBehaviour
         while(deathTime > 0 && !levelWin)
         {
             deathTime -= Time.deltaTime;
+            if (timer != null)
+            {
+                timer.text = deathTime.ToString();
+            }
+
             if (deathTime <= 0)
             {
                 if (timesUp != null)
                     timesUp.Invoke();
-            }
-            else if (timer != null)
-            {
-                timer.text = deathTime.ToString();
-            }
+            } 
             yield return null;
         }
     }
