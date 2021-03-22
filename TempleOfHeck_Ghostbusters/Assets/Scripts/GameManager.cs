@@ -46,16 +46,16 @@ public class GameManager : MonoBehaviour
     public IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(loadTime);
-        if((SceneManager.GetActiveScene().buildIndex + 1) > 2)
+        if((SceneManager.GetActiveScene().buildIndex + 1) < SceneManager.sceneCountInBuildSettings)
         {
-            if(finalScene != null)
-            {
-                finalScene.Invoke();
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (finalScene != null)
+            {
+                finalScene.Invoke();
+            }
         }
     }
     public void LevelWon()

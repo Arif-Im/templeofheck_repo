@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   safeDuration: 1
-  killDuration: 2
+  killDuration: 1
   anim: {fileID: 8513938536920462271}
   startUpDelay: 0
 --- !u!61 &2468256150433054709
