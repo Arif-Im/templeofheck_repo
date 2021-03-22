@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a78fe7464a9bc47b9bde1c3d7b83a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTime: 10
+  deathTime: 15
   timer: {fileID: 344937251}
   loadTime: 2.6
   firstScene:
