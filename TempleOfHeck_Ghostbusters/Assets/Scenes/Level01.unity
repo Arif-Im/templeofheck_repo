@@ -13883,6 +13883,41 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 3000
       objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.8784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.87843144
+      objectReference: {fileID: 0}
+    - target: {fileID: 3148596268985392044, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4064376433095045342, guid: 30286e1f3fe80b243acfc5441aa38198,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -13918,6 +13953,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 40e7a990026f7b4498d421047529dbac,
+        type: 3}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155867168203697530, guid: 30286e1f3fe80b243acfc5441aa38198,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30286e1f3fe80b243acfc5441aa38198, type: 3}
@@ -14045,7 +14116,7 @@ PrefabInstance:
     - target: {fileID: 4520990952855668968, guid: 7a253e8309de1fb49891da900c0bc127,
         type: 3}
       propertyPath: movementSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5689002202989957933, guid: 7a253e8309de1fb49891da900c0bc127,
         type: 3}
@@ -14611,7 +14682,7 @@ PrefabInstance:
     - target: {fileID: 2809013723329379929, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2809013723329379929, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}

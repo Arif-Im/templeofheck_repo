@@ -64,15 +64,6 @@ public class DroppingSpikeBehavior : MonoBehaviour
         if (collision.GetComponent<Death>())
         {
             player = collision.GetComponent<Death>();
-
-            //if (killTime > 0)
-            //{
-            //    killTime -= Time.deltaTime;
-            //}
-            //else
-            //{
-            //    anim.SetTrigger("dropSpike");
-            //}
         }
     }
 
@@ -81,15 +72,6 @@ public class DroppingSpikeBehavior : MonoBehaviour
         if (collision.GetComponent<Death>())
         {
             player = null;
-
-            //if (killTime > 0)
-            //{
-            //    killTime -= Time.deltaTime;
-            //}
-            //else
-            //{
-            //    anim.SetTrigger("dropSpike");
-            //}
         }
     }
 }
