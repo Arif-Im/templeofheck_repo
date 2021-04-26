@@ -14672,7 +14672,7 @@ PrefabInstance:
     - target: {fileID: 2809013723329379928, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7765517
+      value: 1.3333334
       objectReference: {fileID: 0}
     - target: {fileID: 2809013723329379928, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}
@@ -14689,10 +14689,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2809013723329379929, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2809013723669769560, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}
       propertyPath: orthographic size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809013723669769560, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2809013723669769563, guid: 58629eafdedcbe5428d1290bbe762248,
         type: 3}
@@ -14758,6 +14768,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843129745882252845, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843129745882252845, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843129745882252845, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843129745882252845, guid: 58629eafdedcbe5428d1290bbe762248,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58629eafdedcbe5428d1290bbe762248, type: 3}
