@@ -424,7 +424,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1414,17 +1414,17 @@ MonoBehaviour:
     "Blood SFX Pack" by Globe Games.
     Contact by e-mail: globegames.info@gmail.com
 
-    
 
-    Coin Pickup Sound V
-    0.2 by Davidsraba: https://freesound.org/people/Davidsraba/sounds/347174/
 
-    
+    Coin Pickup Sound V 0.2 by
+    Davidsraba: https://freesound.org/people/Davidsraba/sounds/347174/
+
+
 
     2018-05-19
     (Snow Temple Theme) by Doctor_Dreamchip: https://linktr.ee/doctordreamchip
 
-    
+
 
     Charmie
     Font by White supply https://www.creativefabrica.com/product/charmie/
