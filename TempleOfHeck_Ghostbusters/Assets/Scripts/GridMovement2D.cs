@@ -56,6 +56,25 @@ public class GridMovement2D : MonoBehaviour
 
     private void PlayerMovement()
     {
+        /*
+        // Free form movement
+        Vector3 direction = new Vector3(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"),0).normalized;
+        if(!direction.Equals(Vector3.zero))
+        {
+            transform.position += direction * movementSpeed * Time.deltaTime;
+            sprite.flipX = Input.GetAxisRaw("Horizontal") > 0 ? true : false;
+            playerAnim.SetBool(runningID, true);
+            GameObject footPrint = GameObject.Instantiate(footPrints[footAlternate], transform);
+            footAlternate = footAlternate < 1 ? 1 : 0;
+            footPrint.transform.SetParent(null);
+            footPrint.SetActive(true);
+        }
+        else
+        {
+            playerAnim.SetBool(runningID, false);
+        }
+        */
+
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, movementSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05)
@@ -97,13 +116,13 @@ public class GridMovement2D : MonoBehaviour
             {
                 playerAnim.SetBool(runningID, false);
             }
+        }
 
-            if (levelComplete)
-            {
-                playerAnim.SetBool(runningID, false);
-                playerAnim.SetTrigger(celebrateID);
-                this.enabled = false;
-            }
+        if (levelComplete)
+        {
+            playerAnim.SetBool(runningID, false);
+            playerAnim.SetTrigger(celebrateID);
+            this.enabled = false;
         }
     }
 

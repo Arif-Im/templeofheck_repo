@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent levelComplete;
     public UnityEvent timesUp;
     public UnityEvent finalScene;
+    public UnityEvent pauseGame;
     private bool levelWin = false;
 
     private void OnEnable()
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
         }
         if (timer != null)
             timer.text = deathTime.ToString();
+        StartCoroutine(PauseGame());
     }
 
     public void ReloadScene()
@@ -58,6 +60,20 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public IEnumerator PauseGame()
+    {
+        while(true)
+        {
+            yield return new WaitUntil(() => Input.GetButton("Menu"));
+            Time.timeScale = 0.0f;
+            Time.fixedDeltaTime = Time.fixedDeltaTime * Time.timeScale;
+            yield return new WaitUntil(() => Input.GetButton("Menu"));
+            Time.timeScale = 1.0f;
+            Time.fixedDeltaTime = Time.fixedDeltaTime * Time.timeScale;
+        }
+    }
+
     public void LevelWon()
     {
         if(!levelWin)
